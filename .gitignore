@@ -1,0 +1,5 @@
+*__pycache
+.pytest_cache]
+setup.cfg
+.DS_Store
+*.cpython-*
