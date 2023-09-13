@@ -51,19 +51,22 @@ def letter_combinations(digits: str) -> List[str]:
     valid_digit = (is_digits_numeric(digits)
                    and is_digits_in_range(digits)
                    and is_digit_len_greater_than_or_equal_to_one(digits))
-    if not valid_digit:
-        return []
-
     phone_digits_and_letters = {
         "2": ["a", "b", "c"],
         "3": ["d", "e", "f"],
         "4": ["g", "h", "i"],
-        "5": ["j", "k, l"],
+        "5": ["j", "k", "l"],
         "6": ["m", "n, o"],
         "7": ["p", "q", "r", "s"],
         "8": ["t", "u", "v"],
         "9": ["w", "x", "y", "z"]
     }
+    if not valid_digit:
+        return []
+
+    if len(digits) == 1:
+        return phone_digits_and_letters.get(digits)
+
     digit_to_letter_conversion = [phone_digits_and_letters.get(digit) for digit in digits]
 
     return ["".join(p) for p in product(*digit_to_letter_conversion)]
