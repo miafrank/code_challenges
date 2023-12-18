@@ -1,4 +1,4 @@
-from two_sum import two_sum
+from challenges.two_sum import two_sum
 
 
 def test_two_sum():

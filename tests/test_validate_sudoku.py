@@ -1,4 +1,4 @@
-from validate_sudoku import validate_sudoku
+from challenges.validate_sudoku import validate_sudoku
 
 grid1 = [
     [2, 3, 1],

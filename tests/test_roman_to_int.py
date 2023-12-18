@@ -1,4 +1,4 @@
-from roman_to_int import roman_to_int
+from challenges.roman_to_int import roman_to_int
 
 
 def test_roman_to_int():
