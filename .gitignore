@@ -1,5 +1,6 @@
 *__pycache
-.pytest_cache]
+.pytest_cache
 setup.cfg
 .DS_Store
 *.cpython-*
+Pipfile.lock
